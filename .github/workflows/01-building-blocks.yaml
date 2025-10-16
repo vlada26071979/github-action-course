@@ -8,18 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: say hello
-      - run: echo "Hello world"
+        run: echo "Hello world"
   echo-goodbye:
     runs-on: ubuntu-latest
     steps:
       - name: failed steps
-      - run: |
+        run: |
           echo "I am"
           echo "a multi-line"
           echo "script."
 
       - name: say goodbye
-      - run: echo "Goodbye!"
+        run: echo "Goodbye!"
 
       
 
