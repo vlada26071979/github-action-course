@@ -1,0 +1,16 @@
+name: My Workflow  # name cannot have any child key:value pairs
+
+
+config:
+  path: first-directory/file.yml
+  environment: staging
+
+  colors:   # arrays start with -
+    - name: red
+      hex: ff0000
+      labels:
+        -experimental
+        -accessibility
+    - green
+    - blue
+
