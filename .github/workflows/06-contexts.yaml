@@ -16,4 +16,4 @@ jobs:
           echo "Actor: ${{ github.actor }}"
 
       - name: Retrieve a Variable
-        run: echo "${{ env.MY_VAR }}"
+        run: echo "${{ vars.MY_VAR }}"
