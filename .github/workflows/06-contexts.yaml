@@ -1,4 +1,4 @@
-name: 06-contexts.yaml
+name: 06-Contexts
 
 on:
   push:
@@ -20,6 +20,10 @@ jobs:
           echo "Ref: ${{ github.ref }}"
           echo "SHA: ${{ github.sha }}"
           echo "Actor: ${{ github.actor }}"
+          echo "Workflow: ${{ github.workflow}}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run number: ${{ github.run_number}}"
 
-      - name: Retrieve a Variable
-        run: echo "${{ vars.MY_VAR }}"
+      - name: Retrieve Variable
+        run: |
+          echo "${{ vars.MY_VAR }}"
